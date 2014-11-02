@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.1.3
+gemfile: Gemfile.ci
+before_install:
+- openssl aes-256-cbc -k "$stackup_pem_key" -in .stackup.pem.enc -out ~/.ssh/stackup.pem -d
+- chmod 600 ~/.ssh/stackup.pem
+- eval `ssh-agent -s`
+- ssh-add ~/.ssh/stackup.pem
+script:
+- bundle exec rubocop && bundle exec foodcritic -f any . && bundle exec kitchen test -c
+after_script:
+- bundle exec kitchen destroy
+env:
+  global:
+    secure: dWqdp6U9UffekYfagjk5Hir02X0GkL2XvtTbjsVW7KCrU3EUgcH4UYr1NEuNiQz98ss5QtMshoYkRm3cttDZo748TbG3r72tFMJQlgS+oWt5L34WDlLbBACZJ79NJ38RL0lsunLWrPeAKTuo246+RpWLHfBsceyBM57fwDl5ImA=
