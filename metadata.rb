@@ -1,12 +1,12 @@
 name 'stackup-base'
 
-maintainer 'Steven De Coeyer'
+maintainer 'Stack-up'
 maintainer_email 'chef@stack-up.net'
 license 'MIT'
 description 'Installs/Configures stackup-base'
 long_description 'Installs/Configures stackup-base'
 
-version '0.2.0'
+version '0.4.0'
 
 supports 'ubuntu'
 
