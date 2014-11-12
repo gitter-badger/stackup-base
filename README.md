@@ -1,5 +1,7 @@
 # stackup-base
 
+[![Build Status](https://travis-ci.org/stack-up/stackup-base.svg?branch=master)](https://travis-ci.org/stack-up/stackup-base)
+
 This cookbook will bootstrap a node. This cookbook is made for stack-up stacks, so it is opinionated.
 
 ## supports
