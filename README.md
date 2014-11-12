@@ -13,6 +13,7 @@ This cookbook will bootstrap a node. This cookbook is made for stack-up stacks, 
  * installs ntpd
  * installs default packages
  * installs packages defined by node['base']['extra_packages']
+ * enables unattended-upgrades
 
 ---
 
