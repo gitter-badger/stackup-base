@@ -19,4 +19,7 @@ suites:
     run_list:
       - recipe[stackup-base::default]
     attributes:
-
+      apt:
+        unattended_upgrades:
+          mail: 'foo@example.com'
+          automatic_reboot_time: '02:00'

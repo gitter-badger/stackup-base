@@ -1,5 +1,4 @@
 %w(
-  bsd-mailx
   build-essential
   git
   git-extras
