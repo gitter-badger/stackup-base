@@ -93,3 +93,4 @@ Vagrantfile
 # Travis #
 ##########
 .travis.yml
+.stackup.pem.enc
