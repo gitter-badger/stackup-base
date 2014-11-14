@@ -11,6 +11,3 @@ script:
 - bundle exec rubocop && bundle exec foodcritic -f any . && bundle exec kitchen test -c
 after_script:
 - bundle exec kitchen destroy
-env:
-  global:
-    secure: dWqdp6U9UffekYfagjk5Hir02X0GkL2XvtTbjsVW7KCrU3EUgcH4UYr1NEuNiQz98ss5QtMshoYkRm3cttDZo748TbG3r72tFMJQlgS+oWt5L34WDlLbBACZJ79NJ38RL0lsunLWrPeAKTuo246+RpWLHfBsceyBM57fwDl5ImA=
