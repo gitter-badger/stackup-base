@@ -6,9 +6,9 @@ license 'MIT'
 description 'Installs/Configures stackup-base'
 long_description 'Installs/Configures stackup-base'
 
-version '0.4.0'
+version '0.4.1'
 
-supports 'ubuntu'
+supports 'ubuntu', '14.04'
 
 depends 'apt'
 depends 'firewall'
