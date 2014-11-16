@@ -1,4 +1,5 @@
 # stackup-base
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/stack-up/stackup-base?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This cookbook will bootstrap a node. This cookbook is made for stack-up stacks, so it is opinionated.
 
